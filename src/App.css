@@ -86,3 +86,17 @@ ul{
 .nav.active {
   color: #FFFF4D;
 }
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid #FFFF4D;
+  padding-top: 55px;
+}
+.icon{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.icon:hover{
+  color: #FFFF4D;
+}
