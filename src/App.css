@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   color: aliceblue;
+  font-size: 45px;
 }
 h1 {
   margin-top: 0;
@@ -72,4 +73,16 @@ ul{
 }
 .nav{
   padding: 2%;
+}
+.nav:hover{
+  color: #FFFF4D;
+  -webkit-transition: color 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in;
+  -o-transition: color 0.1s ease-in;
+  transition: color 0.1s ease-in;
+  cursor: pointer;
+}
+.nav.active {
+  color: #FFFF4D;
 }

@@ -2,22 +2,20 @@ import './App.css';
 
 import { useState } from 'react';
 
-function NavBar({ setActiveTab }) {
+function NavBar({ setActiveTab, activeTab }) {
   return (
-    <>
     <ul>
-      <li><div className='nav' onClick={() => setActiveTab('home')}>Home</div></li>
-      <li><div className='nav' onClick={() => setActiveTab('education')}>Education</div></li>
-      <li><div className='nav' onClick={() => setActiveTab('experiences')}>Experiences</div></li>
-      <li><div className='nav' onClick={() => setActiveTab('projects')}>Projects</div></li>
-      <li><div className='nav' onClick={() => setActiveTab('hobby')}>Hobby</div></li>
+      <li><div className={`nav ${activeTab === 'home' ? 'active' : ''}`} onClick={() => setActiveTab('home')}>Home</div></li>
+      <li><div className={`nav ${activeTab === 'education' ? 'active' : ''}`} onClick={() => setActiveTab('education')}>Education</div></li>
+      <li><div className={`nav ${activeTab === 'experiences' ? 'active' : ''}`} onClick={() => setActiveTab('experiences')}>Experiences</div></li>
+      <li><div className={`nav ${activeTab === 'projects' ? 'active' : ''}`} onClick={() => setActiveTab('projects')}>Projects</div></li>
+      <li><div className={`nav ${activeTab === 'hobby' ? 'active' : ''}`} onClick={() => setActiveTab('hobby')}>Hobby</div></li>
     </ul>
-    </>
   )
 }
 
 function Home() {
-  return (<><div className='home'>Home</div></>);
+  return (<><div>Home</div></>);
 }
 
 function Education() {
@@ -54,15 +52,14 @@ export default function Container() {
 
   return (
     <>
-    <div className='portfolio'>
-      <div className='leftSide'>
-        <NavBar setActiveTab={setActiveTab} />
+      <div className='portfolio'>
+        <div className='leftSide'>
+          <NavBar setActiveTab={setActiveTab} activeTab={activeTab} />
+        </div>
+        <div className='rightSide'>
+          {content}
+        </div>
       </div>
-      <div className='rightSide'>
-        {content}
-      </div>
-    </div>
-
     </>
   );
 }
