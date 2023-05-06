@@ -1,39 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&family=Rampart+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: aliceblue;
-  font-size: 45px;
 }
 h1 {
+  font-size: 2.2vw;
   margin-top: 0;
-  font-size: 22px;
+  margin-bottom: 0;
 }
 
 h2 {
+  font-size: 2vw;
+  color:#011113;
   margin-top: 0;
-  font-size: 20px;
+  margin-bottom: 0;
 }
 
 h3 {
+  font-size: 1.8vw;
+  color:#011113;
   margin-top: 0;
-  font-size: 18px;
+  margin-bottom: 0;
 }
 
 h4 {
+  font-size: 1.6vw;
   margin-top: 0;
-  font-size: 16px;
+  margin-bottom: 0;
 }
 
 h5 {
+  font-size: 1.4vw;
   margin-top: 0;
-  font-size: 14px;
+  margin-bottom: 0;
 }
 
 h6 {
+  font-size: 1.2vw;
   margin-top: 0;
-  font-size: 12px;
+  margin-bottom: 0;
+  font-weight: 400;
 }
 ul{
   padding-inline-start: 0px;
@@ -55,12 +61,15 @@ ul{
 }
 .leftSide{
   background-color: #011113;
+  color: aliceblue;
+  font-size: 2.1vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 1%;
   padding-right: 1%;
+  font-weight: 800;
 }
 .rightSide{
   background-color: #02343c;
@@ -69,7 +78,7 @@ ul{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 5% 5%;
+  padding: 3% 3%;
 }
 .nav{
   padding: 2%;
@@ -99,4 +108,42 @@ ul{
 }
 .icon:hover{
   color: #FFFF4D;
+}
+.tile{
+  background-color: #d8f3ea;
+  opacity: 80%;
+  -webkit-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  -moz-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  padding: 1%;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 13vw;
+  margin-top: 2vh;
+}
+.black-icon {
+  color: black;
+  font-size: 18px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.location{
+  display: flex;
+  margin-top: 0.3rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.picture{
+  display: flex;
+  border: #011113 2px solid;
+}
+.picture img{
+  max-height: 11vw;
+  align-items: center;
 }
