@@ -123,7 +123,7 @@ function Projects() {
   <>
   <div className='tile-column'> 
     <div className='picture-column'>
-        <img src={`${process.env.PUBLIC_URL}/memory-game.jpg`} alt="pokemon memory game" />
+        <a href="https://radoslawtomaszewski.github.io/memory/"><img src={`${process.env.PUBLIC_URL}/memory-game.jpg`} alt="pokemon memory game" /></a>
     </div>
     <div className='content'>
       <h2>Pokemon Memory Game </h2>
@@ -131,14 +131,14 @@ function Projects() {
     </div>
     <div className='technologies'>
       <h6>Used technologies:</h6>
-      <div>
+      <div className='icons'>
         <FontAwesomeIcon className='icon' icon={faHtml5} />
         <FontAwesomeIcon className='icon' icon={faCss3Alt} />
         <FontAwesomeIcon className='icon' icon={faJsSquare} />
         <FontAwesomeIcon className='icon' icon={faGit} />
       </div>
     </div>
-    <button className='button-go-to'>
+    <button className='button-go-to'onClick={() => window.open('https://github.com/RadoslawTomaszewski/memory', '_blank')}>
       Go to<FontAwesomeIcon className='icon-button' icon={faGithub} />repository
     </button>
   </div>

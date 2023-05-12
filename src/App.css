@@ -93,7 +93,7 @@ ul{
   padding: 2%;
 }
 .nav:hover{
-  color: #2aff30;
+  color: #779937;
   -webkit-transition: color 0.1s ease-in;
   -moz-transition: color 0.1s ease-in;
   -ms-transition: color 0.1s ease-in;
@@ -102,25 +102,26 @@ ul{
   cursor: pointer;
 }
 .nav.active {
-  color: #2aff30;
+  color: #779937;
 }
 .social{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px solid #FFFF4D;
+  border-top: 3px solid #779937;
   padding-top: 55px;
 }
 .icon{
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  padding-top: 1.5vh;
 }
 .icon-button{
   padding-left: 5px;
   padding-right: 5px;
 }
 .icon:hover{
-  color: #268cec;
+  color: #779937;
 }
 .tile{
   background-color: #d8f3ea;
@@ -148,7 +149,7 @@ ul{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 90vh;
+  max-height: 90vh;
   max-width: 24vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -163,8 +164,8 @@ ul{
 .black-icon {
   color: black;
   font-size: 18px;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 4vh;
+  margin-right: 4vh;
 }
 .location{
   display: flex;
@@ -189,6 +190,7 @@ ul{
   max-width: 23vw;
 }
 .technologies{
+  font-size: 2.2vw;
   display: flex;
   margin-top: 1vh;
   padding-top: 2vh;
@@ -206,11 +208,16 @@ ul{
   border-radius: 11px;
   width: 70%;
   padding:       4% 5%;
-  color:         #2aff30;
+  color:         #779937;
   text-align:    center;
   font-size:     1vw;
   opacity: 90%;
+  cursor: pointer;
 }
 .button-go-to:hover{
   opacity: 100%;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
 }
