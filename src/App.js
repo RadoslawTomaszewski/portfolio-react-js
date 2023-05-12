@@ -127,16 +127,16 @@ function Projects() {
     </div>
     <div className='content'>
       <h2>Pokemon Memory Game </h2>
-      <h6>A memory game created using pure JavaScript. The game features two color themes and four different game modes: single player, two players, player vs. computer, and player vs. smart computer</h6>
+      <h6>A memory game created using pure JavaScript. The game features two color themes and four different game modes: single player, two players, player vs. computer and player vs. smart computer</h6>
     </div>
     <div className='technologies'>
       <h6>Used technologies:</h6>
-      <h1>
+      <div>
         <FontAwesomeIcon className='icon' icon={faHtml5} />
         <FontAwesomeIcon className='icon' icon={faCss3Alt} />
         <FontAwesomeIcon className='icon' icon={faJsSquare} />
         <FontAwesomeIcon className='icon' icon={faGit} />
-      </h1>
+      </div>
     </div>
     <button className='button-go-to'>
       Go to<FontAwesomeIcon className='icon-button' icon={faGithub} />repository
