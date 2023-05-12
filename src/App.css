@@ -80,11 +80,20 @@ ul{
   flex-direction: column;
   padding: 3% 3%;
 }
+.right-side-column{
+  background-color: #02343c;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3% 3%;
+}
 .nav{
   padding: 2%;
 }
 .nav:hover{
-  color: #FFFF4D;
+  color: #2aff30;
   -webkit-transition: color 0.1s ease-in;
   -moz-transition: color 0.1s ease-in;
   -ms-transition: color 0.1s ease-in;
@@ -93,7 +102,7 @@ ul{
   cursor: pointer;
 }
 .nav.active {
-  color: #FFFF4D;
+  color: #2aff30;
 }
 .social{
   display: flex;
@@ -106,8 +115,12 @@ ul{
   padding-left: 15px;
   padding-right: 15px;
 }
+.icon-button{
+  padding-left: 5px;
+  padding-right: 5px;
+}
 .icon:hover{
-  color: #FFFF4D;
+  color: #268cec;
 }
 .tile{
   background-color: #d8f3ea;
@@ -122,6 +135,30 @@ ul{
   align-items: center;
   min-height: 13vw;
   margin-top: 2vh;
+}
+.tile-column{
+  background-color: #d8f3ea;
+  opacity: 80%;
+  -webkit-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  -moz-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
+  padding: 1%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90vh;
+  max-width: 24vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  justify-content: space-around;
+}
+.tile:hover{
+  opacity: 100%;
+}
+.tile-column:hover{
+  opacity: 100%;
 }
 .black-icon {
   color: black;
@@ -138,6 +175,7 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  word-wrap: break-word;
 }
 .picture{
   display: flex;
@@ -146,4 +184,33 @@ ul{
 .picture img{
   max-height: 11vw;
   align-items: center;
+}
+.picture-column img{
+  max-width: 23vw;
+}
+.technologies{
+  display: flex;
+  margin-top: 1vh;
+  padding-top: 2vh;
+  margin-bottom: 1vh;
+  padding-bottom: 2vh;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1vh;
+  justify-content: space-between;
+  border-top: #011113 solid 3px;
+  width: 100%;
+}
+.button-go-to{
+  background:   #011113;
+  border-radius: 11px;
+  width: 70%;
+  padding:       4% 5%;
+  color:         #2aff30;
+  text-align:    center;
+  font-size:     1vw;
+  opacity: 90%;
+}
+.button-go-to:hover{
+  opacity: 100%;
 }
