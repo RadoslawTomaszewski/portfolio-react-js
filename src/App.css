@@ -1,65 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
-* {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-h1 {
-  font-size: 2.2vw;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap");
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-h2 {
-  font-size: 2vw;
-  color:#011113;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h3 {
-  font-size: 1.8vw;
-  color:#011113;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h4 {
-  font-size: 1.6vw;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h5 {
-  font-size: 1.4vw;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-h6 {
-  font-size: 1.2vw;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
-}
-ul{
-  padding-inline-start: 0px;
-  list-style-type: none;
-}
 .App {
   text-align: center;
 }
-.Home{
-  height: 100%;
-  width: 100%;
-}
-.portfolio{
+.portfolio {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.leftSide{
+.leftSide {
   background-color: #011113;
   color: aliceblue;
   font-size: 2.1vw;
@@ -71,7 +25,7 @@ ul{
   padding-right: 1%;
   font-weight: 800;
 }
-.rightSide{
+.rightSide {
   background-color: #02343c;
   width: 85%;
   height: 100%;
@@ -80,7 +34,7 @@ ul{
   flex-direction: column;
   padding: 3% 3%;
 }
-.right-side-column{
+.right-side-column {
   background-color: #02343c;
   width: 85%;
   height: 100%;
@@ -89,10 +43,10 @@ ul{
   flex-direction: column;
   padding: 3% 3%;
 }
-.nav{
+.nav {
   padding: 2%;
 }
-.nav:hover{
+.nav:hover {
   color: #779937;
   -webkit-transition: color 0.1s ease-in;
   -moz-transition: color 0.1s ease-in;
@@ -104,45 +58,28 @@ ul{
 .nav.active {
   color: #779937;
 }
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
   border-top: 3px solid #779937;
   padding-top: 55px;
 }
-.icon{
+.icon {
   padding-left: 1.2vw;
   padding-right: 1.2vw;
   padding-top: 1.5vh;
 }
-.icon-button{
+.icon-button {
   padding-left: 5px;
   padding-right: 5px;
 }
-.icon:hover{
+.icon:hover {
   color: #779937;
 }
-.tile{
+.tile-column {
   background-color: #d8f3ea;
   opacity: 80%;
-  -webkit-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
-  -moz-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
-  box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
-  padding: 1%;
-  border-radius: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 13vw;
-  margin-top: 2vh;
-}
-.tile-column{
-  background-color: #d8f3ea;
-  opacity: 80%;
-  -webkit-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
-  -moz-box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
-  box-shadow: 5px 5px 0px 1px rgba(18, 43, 33, 1);
   padding: 1%;
   border-radius: 0.5rem;
   display: flex;
@@ -157,10 +94,7 @@ ul{
   margin-right: 1vw;
   padding: 2vh;
 }
-.tile:hover{
-  opacity: 100%;
-}
-.tile-column:hover{
+.tile-column:hover {
   opacity: 100%;
 }
 .black-icon {
@@ -169,37 +103,23 @@ ul{
   margin-left: 4vh;
   margin-right: 4vh;
 }
-.location{
+.location {
   display: flex;
   margin-top: 0.3rem;
 }
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  word-wrap: break-word;
-}
-.content-projects{
+.content-projects {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   word-wrap: break-word;
   height: 20vw;
 }
-.picture{
-  display: flex;
-  border: #011113 2px solid;
-}
-.picture img{
-  max-height: 11vw;
-  align-items: center;
-}
-.picture-column img{
+.picture-column img {
   max-width: 23vw;
   margin-top: 0;
   border: #011113 2px solid;
 }
-.technologies{
+.technologies {
   font-size: 2.2vw;
   display: flex;
   margin-top: 1vh;
@@ -213,25 +133,25 @@ ul{
   border-top: #011113 solid 3px;
   width: 100%;
 }
-.button-go-to{
-  background:   #011113;
+.button-go-to {
+  background: #011113;
   border-radius: 11px;
   width: 70%;
-  padding:       4% 5%;
-  color:         #779937;
-  text-align:    center;
-  font-size:     1vw;
+  padding: 4% 5%;
+  color: #779937;
+  text-align: center;
+  font-size: 1vw;
   opacity: 90%;
   cursor: pointer;
 }
-.button-go-to:hover{
+.button-go-to:hover {
   opacity: 100%;
 }
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
 }
-.projects{
+.projects {
   display: flex;
   flex-direction: row;
 }
