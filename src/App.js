@@ -26,11 +26,11 @@ export default function Container() {
 
   return (
     <>
-      <div className="portfolio .font-sans">
+      <div className="portfolio .font-sans flex flex-row items-center w-screen h-screen">
         <div className="leftSide">
           <NavBar setActiveTab={setActiveTab} activeTab={activeTab} />
         </div>
-        <div className="rightSide">{content}</div>
+        <div className="bg-darkgreen w-full h-full flex justify-center flex-col p-[3%]">{content}</div>
       </div>
     </>
   );

@@ -3,16 +3,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-.App {
-  text-align: center;
-}
-.portfolio {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 .leftSide {
   background-color: #011113;
   color: aliceblue;
@@ -25,34 +15,11 @@
   padding-right: 1%;
   font-weight: 800;
 }
-.rightSide {
-  background-color: #02343c;
-  width: 85%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 3% 3%;
-}
-.right-side-column {
-  background-color: #02343c;
-  width: 85%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 3% 3%;
-}
 .nav {
   padding: 2%;
 }
 .nav:hover {
   color: #779937;
-  -webkit-transition: color 0.1s ease-in;
-  -moz-transition: color 0.1s ease-in;
-  -ms-transition: color 0.1s ease-in;
-  -o-transition: color 0.1s ease-in;
-  transition: color 0.1s ease-in;
   cursor: pointer;
 }
 .nav.active {
@@ -65,93 +32,4 @@
   border-top: 3px solid #779937;
   padding-top: 55px;
 }
-.icon {
-  padding-left: 1.2vw;
-  padding-right: 1.2vw;
-  padding-top: 1.5vh;
-}
-.icon-button {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.icon:hover {
-  color: #779937;
-}
-.tile-column {
-  background-color: #d8f3ea;
-  opacity: 80%;
-  padding: 1%;
-  border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  max-height: 90vh;
-  max-width: 24vw;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  padding: 2vh;
-}
-.tile-column:hover {
-  opacity: 100%;
-}
-.black-icon {
-  color: black;
-  font-size: 18px;
-  margin-left: 4vh;
-  margin-right: 4vh;
-}
-.location {
-  display: flex;
-  margin-top: 0.3rem;
-}
-.content-projects {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  word-wrap: break-word;
-  height: 20vw;
-}
-.picture-column img {
-  max-width: 23vw;
-  margin-top: 0;
-  border: #011113 2px solid;
-}
-.technologies {
-  font-size: 2.2vw;
-  display: flex;
-  margin-top: 1vh;
-  padding-top: 1vh;
-  margin-bottom: 1vh;
-  padding-bottom: 1vh;
-  flex-direction: column;
-  align-items: center;
-  min-height: 1vh;
-  justify-content: space-between;
-  border-top: #011113 solid 3px;
-  width: 100%;
-}
-.button-go-to {
-  background: #011113;
-  border-radius: 11px;
-  width: 70%;
-  padding: 4% 5%;
-  color: #779937;
-  text-align: center;
-  font-size: 1vw;
-  opacity: 90%;
-  cursor: pointer;
-}
-.button-go-to:hover {
-  opacity: 100%;
-}
-.icons {
-  display: flex;
-  flex-direction: row;
-}
-.projects {
-  display: flex;
-  flex-direction: row;
-}
+
