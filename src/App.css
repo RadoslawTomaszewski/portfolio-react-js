@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -22,7 +22,7 @@
   color: #779937;
   cursor: pointer;
 }
-.nav.active {
+.active {
   color: #779937;
 }
 .social {
@@ -32,4 +32,3 @@
   border-top: 3px solid #779937;
   padding-top: 55px;
 }
-
