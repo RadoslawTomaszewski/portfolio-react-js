@@ -24,6 +24,14 @@ function TallBlock(props) {
           <div className='flex flex-row justify-center text-h1'>
             {props.icons}
           </div>
+          <button
+            className='mt-[8%] w-[80%] cursor-pointer rounded-[11px] bg-black px-[3%] py-[4%] text-center text-base text-h6 text-lightgreen opacity-90 hover:opacity-100'
+            onClick={() => window.open(`${props.repoLink}`, '_blank')}
+          >
+            Go to
+            <FontAwesomeIcon className='px-[3%]' icon={faGithub} />
+            repository
+          </button>
         </div>
       </div>
       <button
