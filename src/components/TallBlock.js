@@ -15,7 +15,7 @@ function TallBlock(props) {
             title={props.hoverText}
           />
         </a>
-        <div className="flex flex-col items-stretch break-words min-h-[34vh] p-[3%]">
+        <div className="flex flex-col items-stretch break-words min-h-[20vh] lg:min-h-[34vh] p-[3%]">
           <div className="text-h2 font-bold leading-none">{props.title}</div>
           <div className="text-h6 leading-[1.5vw]">{props.description}</div>
         </div>
@@ -26,15 +26,15 @@ function TallBlock(props) {
               {props.icons}
             </div>
           </div>
+          <button
+            className="bg-black text-h6 rounded-[11px] w-[80%] mt-[8%] px-[3%] py-[4%] text-lightgreen text-center text-base opacity-90 hover:opacity-100 cursor-pointer"
+            onClick={() => window.open(`${props.repoLink}`, "_blank")}
+          >
+            Go to
+            <FontAwesomeIcon className="px-[3%]" icon={faGithub} />
+            repository
+          </button>
         </div>
-        <button
-          className="bg-black text-h6 rounded-[11px] w-[60%] px-[3%] py-[3%] text-lightgreen text-center text-base opacity-90 hover:opacity-100 cursor-pointer"
-          onClick={() => window.open(`${props.repoLink}`, "_blank")}
-        >
-          Go to
-          <FontAwesomeIcon className="px-[3%]" icon={faGithub} />
-          repository
-        </button>
       </div>
     </>
   );
