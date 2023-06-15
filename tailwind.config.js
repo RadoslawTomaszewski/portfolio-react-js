@@ -1,25 +1,29 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       borderWidth: {
-        "1": "1px",
-        "2": "2px",
-        "3": "3px",
+        1: "1px",
+        2: "2px",
+        3: "3px",
         "1vw": "1vw",
         "1vh": "1vh",
       },
       colors: {
-        darkgreen: "#02343c",
         black: "#011113",
-        lightgreen: "#779937",
-        javascript: "#f99c28",
-        html: "#e44d26",
-        css: "#007db7",
-        fb: "#1877f2",
-        vue: "#3fb984",
         bootstrap: "#870afb",
+        css: "#007db7",
+        darkgreen: "#02343c",
+        fb: "#1877f2",
+        github: "#9b59b6",
+        html: "#e44d26",
+        javascript: "#f99c28",
+        linkedin: "#0a66c2",
+        lightgreen: "#779937",
+        react: "#61dbfb",
+        vue: "#3fb984",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

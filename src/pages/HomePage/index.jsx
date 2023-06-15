@@ -1,8 +1,11 @@
+import helloworld from "../../assets/img/helloworld.png";
 
 export function HomePage() {
   return (
     <>
-      <div>Home</div>
+      <div className="d-flex">
+        <img src={helloworld} alt="hello world" />
+      </div>
     </>
   );
 }

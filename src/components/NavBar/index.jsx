@@ -33,19 +33,19 @@ const navbarList = [
 
 export function NavBar() {
   return (
-    <>
-      <img src={avatar} alt="me" />
-      <ul>
+    <div className="flex h-screen min-w-[16%] flex-col items-center justify-between bg-black">
+      <img className="m-1 mt-5 max-w-[90%]" src={avatar} alt="me" />
+      <ul className="py-5">
         {navbarList.map(({ to, text }) => (
           <NavbarItem to={to} text={text} />
         ))}
       </ul>
-      <div className="mt-10 flex justify-center gap-4">
-        <FontAwesomeIcon className="icon" icon={faGithub} />
-        <FontAwesomeIcon className="icon" icon={faLinkedin} />
-        <FontAwesomeIcon className="icon" icon={faFacebook} />
+      <div className="flex justify-center gap-4 text-h1 text-white">
+        <FontAwesomeIcon className="hover:text-github" icon={faGithub} />
+        <FontAwesomeIcon className="hover:text-linkedin" icon={faLinkedin} />
+        <FontAwesomeIcon className="hover:text-fb" icon={faFacebook} />
       </div>
       <div className="hiddenInfo"></div>
-    </>
+    </div>
   );
 }

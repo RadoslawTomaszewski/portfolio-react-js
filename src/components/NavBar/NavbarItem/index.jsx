@@ -1,11 +1,11 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const NavbarItem = ({ to, text }) => (
-  <li>
+  <li className="flex justify-center text-h1 font-bold text-white">
     <NavLink
       to={to}
-      className={({ isActive }) => isActive && 'text-lightgreen'}
+      className={({ isActive }) => isActive && "text-lightgreen"}
     >
       {text}
     </NavLink>

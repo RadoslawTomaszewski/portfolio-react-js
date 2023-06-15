@@ -1,35 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;800&display=swap");
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-.leftSide {
-  background-color: #011113;
-  color: aliceblue;
-  font-size: 2.1vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 1%;
-  padding-right: 1%;
-  font-weight: 800;
-}
-.nav {
-  padding: 2%;
-}
-.nav:hover {
-  color: #779937;
-  cursor: pointer;
-}
-.nav.active {
-  color: #779937;
-}
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 3px solid #779937;
-  padding-top: 55px;
-}
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
