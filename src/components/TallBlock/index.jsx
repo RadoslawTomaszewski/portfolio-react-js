@@ -1,33 +1,31 @@
-import "../App.css";
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-function TallBlock(props) {
+export function TallBlock(props) {
   return (
     <>
-      <div className="opacity-80 hover:opacity-100 bg-green-100 rounded-md flex flex-col justify-between items-center my-[2%] mx-[1%] py-[2%] px-[2] max-h-[90vh] max-w-[24vw]">
+      <div className="mx-[1%] my-[2%] flex max-h-[90vh] max-w-[24vw] flex-col items-center justify-between rounded-md bg-green-100 px-[2] py-[2%] opacity-80 hover:opacity-100">
         <a href={props.siteLink}>
           <img
             className="max-w-[23vw] border-2 border-solid border-gray-800"
-            src={`${process.env.PUBLIC_URL}/${props.image}`}
+            src={props.image}
             alt={props.imageAlt}
             title={props.hoverText}
           />
         </a>
-        <div className="flex flex-col items-stretch break-words min-h-[20vh] lg:min-h-[34vh] p-[3%]">
+        <div className="flex min-h-[20vh] flex-col items-stretch break-words p-[3%] lg:min-h-[34vh]">
           <div className="text-h2 font-bold leading-none">{props.title}</div>
           <div className="text-h6 leading-[1.5vw]">{props.description}</div>
         </div>
-        <div className="flex flex-col items-center justify-between border-t-2 border-solid border-gray-800 w-[80%] p-[3%]">
-          <div className="text-h5 flex justify-center flex-col">
+        <div className="flex w-[80%] flex-col items-center justify-between border-t-2 border-solid border-gray-800 p-[3%]">
+          <div className="flex flex-col justify-center text-h5">
             Used technologies:
             <div className="flex flex-row justify-center text-h1">
               {props.icons}
             </div>
           </div>
           <button
-            className="bg-black text-h6 rounded-[11px] w-[80%] mt-[8%] px-[3%] py-[4%] text-lightgreen text-center text-base opacity-90 hover:opacity-100 cursor-pointer"
+            className="mt-[8%] w-[80%] cursor-pointer rounded-[11px] bg-black px-[3%] py-[4%] text-center text-base text-h6 text-lightgreen opacity-90 hover:opacity-100"
             onClick={() => window.open(`${props.repoLink}`, "_blank")}
           >
             Go to
@@ -39,5 +37,3 @@ function TallBlock(props) {
     </>
   );
 }
-
-export default TallBlock;

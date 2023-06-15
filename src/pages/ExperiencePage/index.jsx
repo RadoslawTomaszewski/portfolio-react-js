@@ -1,8 +1,8 @@
-import "../App.css";
-import React from "react";
-import WideBlock from "./WideBlock";
+import { WideBlock } from "../../components";
+import iknow from "../../assets/img/iknow.png";
+import cyfrowypolsat from "../../assets/img/cp_plus.jpeg";
 
-function Experiences() {
+export function ExperiencePage() {
   return (
     <>
       <WideBlock
@@ -14,7 +14,7 @@ function Experiences() {
         features1="przygotowanie do matury z zakresu rozszerzonego"
         features2="przygotowanie do matury z zakresu podstawowego"
         features3="przygotowanie do egzaminu ósmoklasisty"
-        image="iknow.png"
+        image={iknow}
         imageAlt="logo i.know"
       />
       <WideBlock
@@ -26,11 +26,9 @@ function Experiences() {
         features1="sprzedaż abonamentów telekomunikacyjnych"
         features2="posprzedażowa obsługa klienta"
         features3="moderacja Social Media"
-        image="cp_plus.jpeg"
+        image={cyfrowypolsat}
         imageAlt="logo cyfrowy polsat"
       />
     </>
   );
 }
-
-export default Experiences;

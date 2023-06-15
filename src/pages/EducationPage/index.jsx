@@ -1,8 +1,9 @@
-import "../App.css";
-import React from "react";
-import WideBlock from "./WideBlock";
+import { WideBlock } from "../../components";
+import lo from "../../assets/img/lo.jpg";
+import sggw from "../../assets/img/sggw.jpg";
+import spsobienie from "../../assets/img/sobienie.jpg";
 
-function Education() {
+export function EducationPage() {
   return (
     <>
       <WideBlock
@@ -14,7 +15,7 @@ function Education() {
         features1=""
         features2="Specjalizacja: Inżynieria Systemów Informacyjnych"
         features3="dwukrotnie w rankingu 3% studentów z najwyższą średnią na roku"
-        image="sggw.jpg"
+        image={sggw}
         imageAlt="budynek SGGW"
       />
       <WideBlock
@@ -26,7 +27,7 @@ function Education() {
         features1="100% na egzaminie maturalnym z matematyki (część pisemna)"
         features2="100% na egzaminie maturalnym z języka polskiego (część ustna)"
         features3=" "
-        image="lo.jpg"
+        image={lo}
         imageAlt="budynek liceum"
       />
       <WideBlock
@@ -38,11 +39,9 @@ function Education() {
         features1="czterokrotny mistrz powiatu otwockiego w biegu na 100 m"
         features2=" "
         features3=" "
-        image="sobienie.jpg"
+        image={spsobienie}
         imageAlt="budynek szkoły w Sobieniach-Jeziorach"
       />
     </>
   );
 }
-
-export default Education;

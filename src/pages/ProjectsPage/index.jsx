@@ -1,7 +1,4 @@
-import "../App.css";
-
-import React from "react";
-import TallBlock from "./TallBlock";
+import { TallBlock } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHtml5,
@@ -11,14 +8,17 @@ import {
   faVuejs,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Projects() {
+import memory from "../../assets/img/memory-game.jpg";
+import sop from "../../assets/img/sop.png";
+
+export function ProjectsPage() {
   return (
     <>
       <div className="flex flex-row">
         <TallBlock
           siteLink="https://radoslawtomaszewski.github.io/memory/"
           hoverText="Naciśnij aby zagrać"
-          image="memory-game.jpg"
+          image={memory}
           imageAlt="Pokemon Memory Game"
           title="Pokemon Memory Game"
           description="A memory game created using pure JavaScript. The game features two
@@ -48,7 +48,37 @@ function Projects() {
         <TallBlock
           siteLink="https://radoslawtomaszewski.github.io/memory/"
           hoverText="Naciśnij aby zagrać"
-          image="sop.png"
+          image={memory}
+          imageAlt="Pokemon Memory Game"
+          title="Pokemon Memory Game"
+          description="A memory game created using pure JavaScript. The game features two
+                        color themes and four different game modes: single player, two
+                        players, player vs. computer and player vs. smart computer."
+          icons={
+            <>
+              <FontAwesomeIcon
+                className="px-[1vw] hover:text-html"
+                icon={faHtml5}
+                title="HTML5"
+              />
+              <FontAwesomeIcon
+                className="px-[1vh] hover:text-css"
+                icon={faCss3Alt}
+                title="CSS3"
+              />
+              <FontAwesomeIcon
+                className="px-[1vw] hover:text-javascript"
+                icon={faJsSquare}
+                title="Java Script"
+              />
+            </>
+          }
+          repoLink="https://github.com/RadoslawTomaszewski/memory"
+        />
+        <TallBlock
+          siteLink="https://radoslawtomaszewski.github.io/memory/"
+          hoverText="Naciśnij aby zagrać"
+          image={sop}
           imageAlt="Patient Service GUI"
           title="Patient Service GUI"
           description="The frontend component of a student team web application project.
@@ -76,5 +106,3 @@ function Projects() {
     </>
   );
 }
-
-export default Projects;
