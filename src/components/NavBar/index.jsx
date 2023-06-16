@@ -9,11 +9,8 @@ import { LanguageSelector } from "./LangSelector";
 import avatar from "../../assets/img/me.jpg";
 import { useEffect } from "react";
 import i18next from "i18next";
-import { useTranslation } from "react-i18next";
 
 export function NavBar() {
-  const { t } = useTranslation();
-
   const navbarList = [
     {
       to: "",

@@ -1,19 +1,31 @@
 import { WideBlock } from "../../components";
 import iknow from "../../assets/img/iknow.png";
 import cyfrowypolsat from "../../assets/img/cp_plus.jpeg";
+import { useTranslation } from "react-i18next";
 
 export function ExperiencePage() {
+  const { t } = useTranslation();
+  const nameIknow = t("nameIknow");
+  const titleIknow = t("titleIknow");
+  const features1Iknow = t("features1Iknow");
+  const features2Iknow = t("features2Iknow");
+  const features3Iknow = t("features3Iknow");
+  const titleCP = t("titleCP");
+  const features1CP = t("features1CP");
+  const features2CP = t("features2CP");
+  const features3CP = t("features3CP");
+
   return (
     <>
       <WideBlock
         years="2021 - "
-        name="Centrum Edukacji i.know"
+        name={nameIknow}
         city="Otwock"
-        title="Korepetytor z matematyki"
+        title={titleIknow}
         title2=""
-        features1="przygotowanie do matury z zakresu rozszerzonego"
-        features2="przygotowanie do matury z zakresu podstawowego"
-        features3="przygotowanie do egzaminu ósmoklasisty"
+        features1={features1Iknow}
+        features2={features2Iknow}
+        features3={features3Iknow}
         image={iknow}
         imageAlt="logo i.know"
       />
@@ -21,11 +33,11 @@ export function ExperiencePage() {
         years="2018 - 2020"
         name="TCC Telecomunication Customer Care"
         city="Warszawa"
-        title="Konsultant Back Office"
+        title={titleCP}
         title2=""
-        features1="sprzedaż abonamentów telekomunikacyjnych"
-        features2="posprzedażowa obsługa klienta"
-        features3="moderacja Social Media"
+        features1={features1CP}
+        features2={features2CP}
+        features3={features3CP}
         image={cyfrowypolsat}
         imageAlt="logo cyfrowy polsat"
       />

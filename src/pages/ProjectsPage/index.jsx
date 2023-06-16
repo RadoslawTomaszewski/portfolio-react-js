@@ -13,18 +13,31 @@ import {
 import memory from "../../assets/img/memory-game.jpg";
 import sop from "../../assets/img/sop.png";
 import todolist from "../../assets/img/todolist.png";
+import { useTranslation } from "react-i18next";
 
 export function ProjectsPage() {
+  const { t } = useTranslation();
+
+  const titleTodo = t("titleTodo");
+  const hoverText = t("hoverText");
+  const descriptionTodo = t("descriptionTodo");
+
+  const hoverTextMemory = t("hoverTextMemory");
+  const descriptionMemory = t("descriptionMemory");
+
+  const titleSOP = t("titleSOP");
+  const descriptionSOP = t("descriptionSOP");
+
   return (
     <>
       <div className="flex flex-row">
         <TallBlock
-          siteLink="https://radoslawtomaszewski.github.io/memory/"
-          hoverText="Naciśnij aby przejść do strony projektu"
+          siteLink="https://radoslawtomaszewski.github.io/todolist_frontend/"
+          hoverText={hoverText}
           image={todolist}
           imageAlt="ToDoList"
-          title="To Do List"
-          description="My first full-stack application is designed to organize a to-do list with the ability to set task deadlines and display the remaining time until completion. I have developed the backend using Spring Boot technology, while the frontend is built using a React JS. I used the AXIOS library to handle HTTP requests."
+          title={titleTodo}
+          description={descriptionTodo}
           icons={
             <>
               <FontAwesomeIcon
@@ -44,17 +57,15 @@ export function ProjectsPage() {
               />
             </>
           }
-          repoLink="https://github.com/RadoslawTomaszewski/memory"
+          repoLink="https://github.com/RadoslawTomaszewski/todolist_frontend"
         />
         <TallBlock
           siteLink="https://radoslawtomaszewski.github.io/memory/"
-          hoverText="Naciśnij aby zagrać"
+          hoverText={hoverTextMemory}
           image={memory}
           imageAlt="Pokemon Memory Game"
           title="Pokemon Memory Game"
-          description="A memory game created using pure JavaScript. The game features two
-                        color themes and four different game modes: single player, two
-                        players, player vs. computer and player vs. smart computer."
+          description={descriptionMemory}
           icons={
             <>
               <FontAwesomeIcon
@@ -77,16 +88,12 @@ export function ProjectsPage() {
           repoLink="https://github.com/RadoslawTomaszewski/memory"
         />
         <TallBlock
-          siteLink="https://radoslawtomaszewski.github.io/memory/"
-          hoverText="Naciśnij aby zagrać"
+          siteLink=""
+          hoverText=""
           image={sop}
           imageAlt="Patient Service GUI"
-          title="Patient Service GUI"
-          description="The frontend component of a student team web application project.
-                      It is a patient management system designed for ambulance rescuers
-                      and medical staff, allowing for efficient verification of the
-                      available number of hospital beds and management of the patient's
-                      medical history."
+          title={titleSOP}
+          description={descriptionSOP}
           icons={
             <>
               <FontAwesomeIcon

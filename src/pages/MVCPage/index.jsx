@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 export function MVCPage() {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
@@ -44,7 +47,7 @@ export function MVCPage() {
 
   return (
     <div className="flex min-h-[95%] flex-col justify-start overflow-y-scroll rounded-md bg-green-100 p-4">
-      <div className="text-center text-h1 font-bold">Księga gości</div>
+      <div className="text-center text-h1 font-bold">{t("Guest book")}</div>
       <div>
         {guestbookEntries.map((entry) => (
           <div key={entry.id} className="my-4">
@@ -57,7 +60,7 @@ export function MVCPage() {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <label className="my-2" htmlFor="name">
-              Imię:
+              Nick:
             </label>
             <input
               type="text"
@@ -70,7 +73,7 @@ export function MVCPage() {
           </div>
           <div className="flex flex-col">
             <label className="my-2" htmlFor="message">
-              Wpis:
+              {t("description")}
             </label>
             <textarea
               id="message"
@@ -85,7 +88,7 @@ export function MVCPage() {
               type="submit"
               className="my-2 rounded bg-darkgreen p-2 px-4  font-medium text-white hover:text-lightgreen"
             >
-              Dodaj wpis
+              {t("Add entry")}
             </button>
           </div>
         </form>
