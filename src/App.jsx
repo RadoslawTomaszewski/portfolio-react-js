@@ -9,6 +9,9 @@ import {
 import { Route, Routes } from "react-router";
 import { Layout } from "./Layout";
 
+// import AddTodo from "./pages/MVCPage/pages/AddTodo";
+// import EditTodo from "./pages/MVCPage/pages/EditTodo";
+
 export default function App() {
   return (
     <>
@@ -19,8 +22,8 @@ export default function App() {
           <Route path="experience" element={<ExperiencePage />} />
           <Route path="education" element={<EducationPage />} />
           <Route path="mvc" element={<MVCPage />} />
-          <Route path="mvc/addtodo" element={<AddTodo />} />
-          <Route path="mvc/edittodo/:id" element={<EditTodo />} />
+          {/* <Route path="mvc/addtodo" element={<AddTodo />} />
+          <Route path="mvc/edittodo/:id" element={<EditTodo />} /> */}
         </Route>
       </Routes>
     </>
