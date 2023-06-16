@@ -5,35 +5,53 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { NavbarItem } from "./NavbarItem";
-
+import { LanguageSelector } from "./LangSelector";
 import avatar from "../../assets/img/me.jpg";
-
-const navbarList = [
-  {
-    to: "",
-    text: "Home",
-  },
-  {
-    to: "education",
-    text: "Education",
-  },
-  {
-    to: "experience",
-    text: "Experience",
-  },
-  {
-    to: "projects",
-    text: "Projects",
-  },
-  {
-    to: "mvc",
-    text: "MVC",
-  },
-];
+import { useEffect } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 
 export function NavBar() {
+  const { t } = useTranslation();
+
+  const navbarList = [
+    {
+      to: "",
+      text: "Home",
+    },
+    {
+      to: "education",
+      text: "Education",
+    },
+    {
+      to: "experience",
+      text: "Experience",
+    },
+    {
+      to: "projects",
+      text: "Projects",
+    },
+    {
+      to: "mvc",
+      text: "MVC",
+    },
+  ];
+
+  const setLang = (data) => {
+    console.log(data);
+    i18next.changeLanguage(data);
+  };
+
+  useEffect(() => {
+    const lang = localStorage.getItem("language");
+    if (lang) {
+      i18next.changeLanguage(lang);
+    }
+  }, []);
+
   return (
     <div className="flex h-screen min-w-[16%] flex-col items-center justify-between bg-black">
+      <LanguageSelector setLang={setLang} />
       <img className="m-1 mt-5 max-w-[90%]" src={avatar} alt="me" />
       <ul className="py-5">
         {navbarList.map(({ to, text }) => (
