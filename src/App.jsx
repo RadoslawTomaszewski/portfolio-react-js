@@ -15,7 +15,7 @@ import { Layout } from "./Layout";
 export default function App() {
   return (
     <>
-      <Routes basename={process.env.PUBLIC_URL}>
+      <Routes basename="/portfolio-react-js">
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
