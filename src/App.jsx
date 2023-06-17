@@ -22,8 +22,6 @@ export default function App() {
           <Route path="experience" element={<ExperiencePage />} />
           <Route path="education" element={<EducationPage />} />
           <Route path="mvc" element={<MVCPage />} />
-          {/* <Route path="mvc/addtodo" element={<AddTodo />} />
-          <Route path="mvc/edittodo/:id" element={<EditTodo />} /> */}
         </Route>
       </Routes>
     </>

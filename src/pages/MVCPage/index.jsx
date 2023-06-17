@@ -17,7 +17,9 @@ export function MVCPage() {
 
   const fetchGuestbookEntries = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/guestbook");
+      const response = await axios.get(
+        "https://guestlist-backend.onrender.com/guestbook"
+      );
       setGuestbookEntries(response.data);
     } catch (error) {
       console.error(error);
@@ -28,10 +30,13 @@ export function MVCPage() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8080/entry", {
-        name: name,
-        description: message,
-      });
+      const response = await axios.post(
+        "https://guestlist-backend.onrender.com/entry",
+        {
+          name: name,
+          description: message,
+        }
+      );
 
       console.log(response.data);
 
@@ -59,7 +64,7 @@ export function MVCPage() {
           ))}
         </div>
         <div className="hidden items-center justify-center lg:flex lg:w-[50%]">
-          <img src={bookImage} />
+          <img src={bookImage} alt="book" />
         </div>
       </div>
       <div className="border-t-2 border-darkgreen">
