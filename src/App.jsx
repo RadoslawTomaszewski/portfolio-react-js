@@ -15,8 +15,8 @@ import { Layout } from "./Layout";
 export default function App() {
   return (
     <>
-      <Routes>
-        <Route basename={process.env.PUBLIC_URL} path="/" element={<Layout />}>
+      <Routes basename={process.env.PUBLIC_URL}>
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="experience" element={<ExperiencePage />} />
