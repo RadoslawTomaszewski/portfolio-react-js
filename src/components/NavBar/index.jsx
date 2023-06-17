@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -5,10 +6,9 @@ import {
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import { NavbarItem } from "./NavbarItem";
-import { LanguageSelector } from "./LangSelector";
 import avatar from "../../assets/img/me.jpg";
-import { useEffect } from "react";
 import i18next from "i18next";
+import { LanguageSelector } from "./LangSelector";
 
 export function NavBar() {
   const navbarList = [
@@ -48,11 +48,13 @@ export function NavBar() {
 
   return (
     <div className="flex h-screen min-w-[16%] flex-col items-center justify-between bg-black">
-      <LanguageSelector setLang={setLang} />
+      <div className="absolute right-0 top-0 m-1">
+        <LanguageSelector setLang={setLang} />
+      </div>
       <img className="m-1 mt-5 max-w-[90%]" src={avatar} alt="me" />
       <ul className="py-5">
         {navbarList.map(({ to, text }) => (
-          <NavbarItem to={to} text={text} />
+          <NavbarItem key={to} to={to} text={text} />
         ))}
       </ul>
       <div className="flex justify-center gap-4 text-h1 text-white">

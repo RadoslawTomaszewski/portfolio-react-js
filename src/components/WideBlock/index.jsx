@@ -1,7 +1,7 @@
 export function WideBlock(props) {
   return (
     <>
-      <div className="my-5 flex min-h-[13vw] items-center justify-between rounded-md bg-green-100 p-4 opacity-80 hover:opacity-100">
+      <div className="my-5 flex min-h-[13vw] items-center justify-between rounded-md bg-green-100 p-4 ">
         <div className="flex flex-col items-stretch break-words">
           <div className="text-h4 font-bold leading-none">{props.years}</div>
           <div className="text-h2 font-bold leading-none">{props.name}</div>

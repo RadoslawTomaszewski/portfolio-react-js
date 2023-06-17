@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import bookImage from "../../assets/img/book.png";
 
 export function MVCPage() {
   const { t } = useTranslation();
@@ -48,13 +49,18 @@ export function MVCPage() {
   return (
     <div className="flex min-h-[95%] flex-col justify-start overflow-y-scroll rounded-md bg-green-100 p-4">
       <div className="text-center text-h1 font-bold">{t("Guest book")}</div>
-      <div>
-        {guestbookEntries.map((entry) => (
-          <div key={entry.id} className="my-4">
-            <div className="font-bold">{entry.name}</div>
-            <div className="font-normal">{entry.description}</div>
-          </div>
-        ))}
+      <div className="flex">
+        <div className="w-[50%]">
+          {guestbookEntries.map((entry) => (
+            <div key={entry.id} className="my-4">
+              <div className="font-bold">{entry.name}</div>
+              <div className="font-normal">{entry.description}</div>
+            </div>
+          ))}
+        </div>
+        <div className="w-[50%]">
+          <img src={bookImage} />
+        </div>
       </div>
       <div className="border-t-4 border-darkgreen">
         <form onSubmit={handleSubmit}>
