@@ -30,7 +30,7 @@ export function ProjectsPage() {
 
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-col justify-center lg:flex-row">
         <TallBlock
           siteLink="https://radoslawtomaszewski.github.io/todolist_frontend/"
           hoverText={hoverText}

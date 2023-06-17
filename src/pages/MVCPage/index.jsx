@@ -48,9 +48,9 @@ export function MVCPage() {
 
   return (
     <div className="flex min-h-[95%] flex-col justify-start overflow-y-scroll rounded-md bg-green-100 p-4">
-      <div className="text-center text-h1 font-bold">{t("Guest book")}</div>
-      <div className="flex">
-        <div className="w-[50%]">
+      <div className="text-center text-4xl font-bold">{t("Guest book")}</div>
+      <div className="flex justify-between">
+        <div className="flex-grow-1 justify-center">
           {guestbookEntries.map((entry) => (
             <div key={entry.id} className="my-4">
               <div className="font-bold">{entry.name}</div>
@@ -58,11 +58,11 @@ export function MVCPage() {
             </div>
           ))}
         </div>
-        <div className="w-[50%]">
+        <div className="hidden items-center justify-center lg:flex lg:w-[50%]">
           <img src={bookImage} />
         </div>
       </div>
-      <div className="border-t-4 border-darkgreen">
+      <div className="border-t-2 border-darkgreen">
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <label className="my-2" htmlFor="name">

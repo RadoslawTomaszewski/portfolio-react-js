@@ -47,17 +47,21 @@ export function NavBar() {
   }, []);
 
   return (
-    <div className="flex h-screen min-w-[16%] flex-col items-center justify-between bg-black">
+    <div className="flex w-auto flex-row items-center justify-between bg-black lg:flex-col">
       <div className="absolute right-0 top-0 m-1">
         <LanguageSelector setLang={setLang} />
       </div>
-      <img className="m-1 mt-5 max-w-[90%]" src={avatar} alt="me" />
-      <ul className="py-5">
+      <img
+        className="m-1 mt-5 hidden max-w-[90%] lg:block "
+        src={avatar}
+        alt="me"
+      />
+      <ul className="flex w-full flex-col lg:py-5">
         {navbarList.map(({ to, text }) => (
           <NavbarItem key={to} to={to} text={text} />
         ))}
       </ul>
-      <div className="flex justify-center gap-4 text-h1 text-white">
+      <div className="hidden justify-center gap-4 p-1 text-4xl text-white lg:flex">
         <FontAwesomeIcon className="hover:text-github" icon={faGithub} />
         <FontAwesomeIcon className="hover:text-linkedin" icon={faLinkedin} />
         <FontAwesomeIcon className="hover:text-fb" icon={faFacebook} />

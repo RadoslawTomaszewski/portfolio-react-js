@@ -7,32 +7,34 @@ export function TallBlock(props) {
 
   return (
     <>
-      <div className="mx-[1%] my-[2%] flex max-h-[90vh] max-w-[24vw] flex-col items-center justify-between rounded-md bg-green-100 px-[2] py-[2%] opacity-80 hover:opacity-100">
-        <a href={props.siteLink}>
-          <img
-            className="max-w-[23vw] border-2 border-solid border-gray-800"
-            src={props.image}
-            alt={props.imageAlt}
-            title={props.hoverText}
-          />
-        </a>
-        <div className="flex min-h-[20vh] flex-col items-stretch break-words p-[3%] lg:min-h-[34vh]">
-          <div className="text-h2 font-bold leading-none">{props.title}</div>
-          <div className="text-h6 leading-[1.5vw]">{props.description}</div>
+      <div className="m-2 flex flex-col flex-wrap items-center justify-between rounded-md bg-green-100 py-3 lg:min-h-[80vh] lg:w-[23vw]">
+        <div className="flex items-center justify-center p-1">
+          <a href={props.siteLink}>
+            <img
+              className="hidden border-2 border-solid border-gray-800  text-center lg:block lg:w-[100%]"
+              src={props.image}
+              alt={props.imageAlt}
+              title={props.hoverText}
+            />
+            <div className="text-4xl font-bold lg:mt-2">{props.title}</div>
+          </a>
         </div>
-        <div className="flex w-[80%] flex-col items-center justify-between border-t-2 border-solid border-gray-800 p-[3%]">
-          <div className="flex flex-col justify-center text-h5">
+        <div className="flex flex-col items-stretch break-words lg:p-2">
+          <div className="hidden text-base lg:block">{props.description}</div>
+        </div>
+        <div className="flex flex-col items-center justify-between border-gray-800 p-2 lg:border-t-2 lg:border-solid">
+          <div className="hidden flex-col items-center justify-center text-lg lg:flex">
             {t("Used technologies:")}
-            <div className="flex flex-row justify-center text-h1">
+            <div className="my-3 flex flex-row justify-center text-4xl">
               {props.icons}
             </div>
           </div>
           <button
-            className="mt-[8%] w-[80%] cursor-pointer rounded-[11px] bg-black px-[3%] py-[4%] text-center text-base text-h6 text-lightgreen opacity-90 hover:opacity-100"
+            className="min-w-auto cursor-pointer rounded-[11px] bg-black px-3 py-3 text-center text-base text-h6 text-lightgreen opacity-90 hover:opacity-100"
             onClick={() => window.open(`${props.repoLink}`, "_blank")}
           >
             {t("Go to")}
-            <FontAwesomeIcon className="px-[3%]" icon={faGithub} />
+            <FontAwesomeIcon className="px-3" icon={faGithub} />
             {t("repository")}
           </button>
         </div>
