@@ -16,7 +16,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route basename={process.env.PUBLIC_URL} path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="projects" element={<ProjectsPage />} />
           <Route path="experience" element={<ExperiencePage />} />
