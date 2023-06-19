@@ -1,3 +1,4 @@
+// prettier-ignore
 const resources = {
   en: {
     translation: {
@@ -17,9 +18,9 @@ const resources = {
       nameSP: "Public Primary School and Middle School",
       featuresSP: "four-time champion of the Otwock County in the 100m race",
 
-      education: "Education",
-      experience: "Experience",
-      projects: "Projects",
+      "education": "Education",
+      "experience": "Experience",
+      "projects": "Projects",
 
       nameIknow: "Education Center i.know",
       titleIknow: "Mathematics Tutor",
@@ -44,9 +45,9 @@ const resources = {
 
       "Used technologies:": "Used technologies:",
       "Go to": "Go to",
-      repository: "repository",
+      "repository": "repository",
       "Guest book": "Guest book",
-      description: "Entry:",
+      "description": "Entry:",
       "Add entry": "Add entry",
     },
   },
@@ -67,9 +68,9 @@ const resources = {
       nameSP: "Publiczna Szkoła Podstawowa i Gimnazjum",
       featuresSP: "czterokrotny mistrz powiatu otwockiego w biegu na 100 m",
 
-      education: "Education",
-      experience: "Kariera",
-      projects: "Projekty",
+      "education": "Edukacja",
+      "experience": "Kariera",
+      "projects": "Projekty",
 
       nameIknow: "Centrum Edukacji i.know",
       titleIknow: "Korepetytor z matematyki",
@@ -93,9 +94,9 @@ const resources = {
 
       "Used technologies:": "Użyte technologie:",
       "Go to": "Przejdź do",
-      repository: "repozytorium",
+      "repository": "repozytorium",
       "Guest book": "Księga gości",
-      description: "Wpis:",
+      "description": "Wpis:",
       "Add entry": "Dodaj wpis",
     },
   },

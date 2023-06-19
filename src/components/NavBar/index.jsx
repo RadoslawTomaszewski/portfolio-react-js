@@ -9,8 +9,11 @@ import { NavbarItem } from "./NavbarItem";
 import avatar from "../../assets/img/me.jpg";
 import i18next from "i18next";
 import { LanguageSelector } from "./LangSelector";
+import { useTranslation } from "react-i18next";
 
 export function NavBar() {
+  const { t } = useTranslation();
+
   const navbarList = [
     {
       to: "",
@@ -18,15 +21,15 @@ export function NavBar() {
     },
     {
       to: "education",
-      text: "Education",
+      text: "education",
     },
     {
       to: "experience",
-      text: "Experience",
+      text: "experience",
     },
     {
       to: "projects",
-      text: "Projects",
+      text: "projects",
     },
     {
       to: "mvc",
@@ -58,7 +61,7 @@ export function NavBar() {
       />
       <ul className="flex w-full flex-col lg:py-5">
         {navbarList.map(({ to, text }) => (
-          <NavbarItem key={to} to={to} text={text} />
+          <NavbarItem key={to} to={to} text={t(text)} />
         ))}
       </ul>
       <div className="hidden justify-center gap-4 p-1 text-4xl text-white lg:flex">
