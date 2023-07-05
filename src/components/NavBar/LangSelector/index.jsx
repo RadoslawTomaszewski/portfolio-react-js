@@ -31,10 +31,10 @@ export const LanguageSelector = (props) => {
         value={language}
       >
         <option key={"pl"} value="pl" className="cursor-pointer">
-          Polski
+          polski
         </option>
         <option key={"en"} value="en" className="cursor-pointer">
-          English
+          english
         </option>
       </select>
     </div>
