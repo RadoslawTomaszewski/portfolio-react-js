@@ -26,7 +26,7 @@ export const LanguageSelector = (props) => {
     <div className="z-50 m-2 flex items-center justify-center rounded border-2 border-black bg-green-100 px-2">
       {renderFlag(language)}
       <select
-        className="block w-[90%] cursor-pointer appearance-none rounded-lg bg-green-100 p-2 text-sm text-darkgreen after:border-none hover:border-none focus:border-none focus:outline-none focus:ring-0"
+        className="block w-[90%] cursor-pointer appearance-none rounded-lg bg-green-100 p-2 text-sm text-darkgreen hover:border-none focus:border-none focus:outline-none focus:ring-0"
         onChange={handleLanguageChange}
         value={language}
       >
